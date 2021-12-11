@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html>
-<body>
-    <h1>Quiz de Noël</h1>
+  <head>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <style>
+      .resize {
+        font-size: 5vw;
+      }
+    </style>
+  </head>
+<body class="resize">
+  <div id="quiz">
+    <h1 style="text-shadow: 2px 2px 5px red;">Quiz de Noël</h1>
     <label for="value">Результат:</label>
-    <input type="number" id="value">
-    <button type="button" onclick=check()>OK</button>
- 
+    <input type="number" id="value" class="resize" size="4" oninput="reset()">
+    <button type="button" onclick="check()" class="resize">OK</button>
+  </div>
+  <p id="error" style="display: none; color: red; font-weight: bold;">Неправильный ответ!</p>
 </body>
   
 <script>
@@ -14,8 +24,11 @@
       if (value == 10) {
         window.location.href = "place.jpg"
       } else {
-          alert("Неправльный ответ");
+        document.getElementById("error").style.display = "block";
       }
+  }
+  function reset() {
+    document.getElementById("error").style.display = "none";
   }
 </script>
 
