@@ -1,6 +1,22 @@
-<head>
-    Quiz de Noël
-</head>
+<!DOCTYPE html>
+<html>
 <body>
-    
+    <h1>Quiz de Noël</h1>
+    <label for="value">Результат:</label>
+    <input type="number" id="value">
+    <button type="button" onclick=check()>OK</button>
+ 
 </body>
+  
+<script>
+  function check() {
+      var value = document.getElementById("value").value;
+      if (value == 10) {
+        window.location.href = "place.jpg"
+      } else {
+          alert("Неправльный ответ");
+      }
+  }
+</script>
+
+</html>
