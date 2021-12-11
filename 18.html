@@ -12,7 +12,7 @@
   <div id="quiz">
     <h1 style="text-shadow: 2px 2px 5px red;">Quiz de Noël</h1>
     <label for="value">Результат:</label>
-    <input type="number" id="value" class="resize" size="4" oninput="reset()">
+    <input type="number" id="value" class="resize" min="0" max="9999" oninput="reset()">
     <button type="button" onclick="check()" class="resize">OK</button>
   </div>
   <p id="error" style="display: none; color: red; font-weight: bold;">Неправильный ответ!</p>
