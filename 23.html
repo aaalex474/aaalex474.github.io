@@ -10,7 +10,7 @@
   </head>
 <body class="resize">
   <div id="quiz">
-    <h1 style="text-shadow: 2px 2px 5px red;">24</h1>
+    <h1 style="text-shadow: 2px 2px 5px red;">23</h1>
     <label for="value">Результат:</label>
     <input type="number" id="value" class="resize" min="0" max="99999" oninput="reset()">
     <button type="button" onclick="check()" class="resize">OK</button>
@@ -21,8 +21,8 @@
 <script>
   function check() {
       var value = document.getElementById("value").value;
-      if (value == 900) {
-        window.location.href = "place2.html"
+      if (value == 3) {
+        window.location.href = "boots.html"
       } else {
         document.getElementById("error").style.display = "block";
       }

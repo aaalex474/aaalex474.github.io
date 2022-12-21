@@ -10,9 +10,9 @@
   </head>
 <body class="resize">
   <div id="quiz">
-    <h1 style="text-shadow: 2px 2px 5px red;">24</h1>
+    <h1 style="text-shadow: 2px 2px 5px red;">22</h1>
     <label for="value">Результат:</label>
-    <input type="number" id="value" class="resize" min="0" max="99999" oninput="reset()">
+    <input type="number" id="value" class="resize" min="0" max="999999" oninput="reset()">
     <button type="button" onclick="check()" class="resize">OK</button>
   </div>
   <p id="error" style="display: none; color: red; font-weight: bold;">Неправильный ответ!</p>
@@ -21,8 +21,8 @@
 <script>
   function check() {
       var value = document.getElementById("value").value;
-      if (value == 900) {
-        window.location.href = "place2.html"
+      if (value == 740531) {
+        window.location.href = "map.html"
       } else {
         document.getElementById("error").style.display = "block";
       }
